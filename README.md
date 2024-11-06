@@ -45,7 +45,7 @@ To install and use the extension:
 1. **Clone the Repository**:
 
    ```bash
-   gh repo clone yourusername/link-preview-generator
+   gh repo clone iamolihe/link-preview-generator
    ```
 2. **Load the extension in chrome**:
   - Open Google Chrome and navigate to chrome://extensions/.
