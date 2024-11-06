@@ -1,0 +1,89 @@
+<a href="${link}" target="_blank" class="embed-card">
+    <div class="embed-content">
+        <h2>${title}</h2>
+        <p>${description}</p>
+        <span class="embed-url">${domain}</span>
+    </div>
+    <div class="embed-image">
+        <img src="${image}" alt="${title}">
+    </div>
+</a>
+<style>
+.embed-card {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+}
+
+.embed-content {
+    padding: 16px;
+    flex: 1;
+    min-width: 0;
+}
+
+.embed-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+.embed-content p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 16px;
+}
+
+.embed-url {
+    font-size: 12px;
+    color: #888;
+}
+
+.embed-image {
+    flex-shrink: 0;
+    max-width: 150px;
+    max-height: 80px;
+    margin: 0px 16px 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.embed-image img {
+    width: auto;
+    max-width: 100%;
+    max-height: 80px;
+}
+
+/* Responsive adjustments for narrow screens */
+@media (max-width: 600px) {
+    .embed-card {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .embed-image {
+        width: 100%; /* Full width image on mobile */
+        max-width: 150px;
+        max-height: none; /* Remove max-height constraint */
+        margin: auto; /* Remove margin for better alignment */
+        margin-bottom: 16px;
+    }
+
+    .embed-image img {
+        width: auto;
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .embed-content {
+        padding: 16px;
+        text-align: left; /* Align text to the left */
+    }
+}
+</style>

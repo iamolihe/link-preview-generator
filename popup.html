@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Preview Generator</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>Link Preview Generator</h3>
+
+    <label for="link">Link:</label>
+    <input type="text" id="link">
+
+    <label for="title">Page Title:</label>
+    <input type="text" id="title">
+
+    <label for="description">Page Description:</label>
+    <input type="text" id="description">
+
+    <label for="image">Page Image URL:</label>
+    <input type="text" id="image">
+
+    <label for="domain">Page Domain:</label>
+    <input type="text" id="domain">
+
+    <button id="fillFields">Get Content from current Website</button>
+    <button id="copyClipboard">Copy to Clipboard</button>
+    <button id="clearFields">Clear Fields</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
